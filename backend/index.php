@@ -106,9 +106,9 @@
 					<span class="msg-erro" id="msgErroSenha">
 						<?= $msg_erro_senha ?>
 					</span>
-					<div class="area-campo-mostrar-senha">
-						<input type="checkbox" name="mostrou_senha" id="campoMostrarSenha">
-						<label for="campoMostrarSenha" class="label-mostrar-senha">Mostrar senha</label>
+					<div class="area-mostrar-senha">
+						<i class="bi bi-circle" id="mostrarSenha"></i>
+						<span id="txtMostrarSenha">Mostrar senha</span>
 					</div>
 				</div>
 				<button type="submit" class="btn-submit">
