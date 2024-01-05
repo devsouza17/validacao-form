@@ -65,14 +65,19 @@
 	margin-bottom: .5rem;
 }
 
-.area-campo-mostrar-senha {
+.area-mostrar-senha {
 	display: flex;
 	align-items: center;
 	gap: .3rem;
 }
 
-.label-mostrar-senha {
+#mostrarSenha,
+#txtMostrarSenha {
 	font-size: .9rem;
+}
+
+.bi-check-circle-fill {
+	color: #008000;
 }
 
 .btn-submit {
