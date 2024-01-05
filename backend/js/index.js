@@ -8,8 +8,11 @@ $(document).ready(function(){
 	// Adicionando evento de "input" ao campo de senha
 	$("#campoSenha").on("input", removerErroSenha);
 
-	// Adicionando evento de "change" ao campo de mostrar senha
-	$("#campoMostrarSenha").on("change", mostrarSenha);
+	// Adicionando evento de "change" ao ícone de mostrar senha
+	$("#mostrarSenha").on("click", mostrarSenha);
+
+	// Adicionando evento de clique ao texto do ícone de mostrar senha
+	$("#txtMostrarSenha").on("click", mostrarSenha);
 
 	// Função que valida o formulário
 	function validarForm(){
@@ -77,10 +80,16 @@ $(document).ready(function(){
 
 	// Função que mostra e oculta a senha
 	function mostrarSenha(){
-		// Verifica se atributo "type" do campo de senha é igual a "password"
-		if($("#campoSenha").prop("type") === "password"){
+		// Verifica se ícone de mostrar senha possui a classe "bi-circle"
+		if($("#mostrarSenha").hasClass("bi-circle")){
+			$("#mostrarSenha").removeClass("bi-circle");
+			$("#mostrarSenha").addClass("bi-check-circle-fill");
+
 			$("#campoSenha").prop("type", "text");
 		}else{
+			$("#mostrarSenha").removeClass("bi-check-circle-fill");
+			$("#mostrarSenha").addClass("bi-circle");
+
 			$("#campoSenha").prop("type", "password");
 		}
 	}
