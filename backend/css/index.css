@@ -1,0 +1,147 @@
+/* Seção do formulário */
+.secao-form {
+	background-color: #fff;
+	width: 25rem;
+	max-width: 100%;
+	padding: 1rem;
+	border: 1px solid #ddd;
+	margin: auto auto 2rem;
+}
+
+.cabecalho-sec-form {
+	text-align: center;
+	margin-bottom: 1.2rem;
+}
+
+.img-usuario {
+	display: inline-block;
+	width: 7rem;
+	margin-bottom: 1rem;
+}
+
+.titulo-sec-form {
+	font-size: 1.7rem;
+}
+
+.area-campos {
+	margin-bottom: 1rem;
+}
+
+.label,
+.campo,
+.msg-erro,
+.btn-submit {
+	display: block;
+}
+
+.label,
+.campo,
+.msg-erro {
+	margin-bottom: .5rem;
+}
+
+.label,
+.btn-submit {
+	font-size: 1.1rem;
+}
+
+.campo-obrigatorio,
+.msg-erro {
+	color: #ff0000;
+}
+
+.campo {
+	font-size: 1rem;
+	width: 100%;
+	padding: .8rem;
+	border: 1px solid #ddd;
+}
+
+.campo:focus {
+	outline: 0;
+}
+
+.msg-erro {
+	font-size: .9rem;
+}
+
+.area-mostrar-senha {
+	display: flex;
+	align-items: center;
+	gap: .2rem;
+}
+
+#iconeMostrarSenha,
+#txtMostrarSenha {
+	font-size: .9rem;
+}
+
+.bi-check-circle-fill {
+	color: #008000;
+}
+
+.btn-submit {
+	color: #fff;
+	background-color: #3091e7;
+	padding: .8rem 1rem;
+	border-radius: .5rem;
+	margin: auto;
+	cursor: pointer;
+	transition: .5s;
+}
+
+.btn-submit:hover {
+	background-color: #257dcc;
+}
+
+/* Estilos adicionais (JavaScript) */
+.erro {
+	border-color: #ff0000;
+}
+
+/* Responsividade */
+
+/* Dispositivos muito pequenos (celulares, até 600px) */
+@media only screen and (max-width: 600px) {
+	.titulo-principal {
+		font-size: 1.7rem;
+	}
+
+	.img-usuario {
+		width: 6rem;
+	}
+
+	.titulo-sec-form {
+		font-size: 1.6rem;
+	}
+}
+
+/* Dispositivos pequenos (celulares e tablets em modo retrato, 600px e acima) */
+@media only screen and (min-width: 600px) {
+	.titulo-principal {
+		font-size: 1.7rem;
+	}
+
+	.img-usuario {
+		width: 6rem;
+	}
+
+	.titulo-sec-form {
+		font-size: 1.6rem;
+	}
+}
+
+/* Dispositivos grandes (laptops e dekstops, 992px e acima) */
+@media only screen and (min-width: 992px) {
+	.titulo-principal {
+		font-size: 2rem;
+	}
+
+	.img-usuario {
+		width: 7rem;
+	}
+
+	.titulo-sec-form {
+		font-size: 1.7rem;
+	}
+}

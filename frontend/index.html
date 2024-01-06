@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Página que faz a validação de um formulário">
+	<meta name="author" content="Vitor Souza">
+	<title>Validação de Formulário</title>
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/index.css">
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+	<!-- Área do site -->
+	<div class="area-site">
+		<!-- Cabeçalho -->
+		<header class="cabecalho">
+			<h1 class="titulo-principal">Validação de Formulário</h1>
+		</header>
+
+		<!-- Seção do formulário -->
+		<section class="secao-form">
+			<header class="cabecalho-sec-form">
+				<img src="img/usuario.png" alt="Ícone de usuário" class="img-usuario">
+				<h2 class="titulo-sec-form">Faça login</h2>
+			</header>
+			<form action="sucesso.html" id="form">
+				<div class="area-campos">
+					<label for="campoEmail" class="label">
+						E-mail: <span class="campo-obrigatorio">*</span>
+					</label>
+					<input type="email" name="email" id="campoEmail" class="campo" placeholder="Digite seu e-mail" maxlength="50" required>
+					<span class="msg-erro" id="msgErroEmail"></span>
+				</div>
+				<div class="area-campos">
+					<label for="campoSenha" class="label">
+						Senha: <span class="campo-obrigatorio">*</span>
+					</label>
+					<input type="password" name="senha" id="campoSenha" class="campo" placeholder="Digite sua senha" minlength="8" maxlength="50" required>
+					<span class="msg-erro" id="msgErroSenha"></span>
+					<div class="area-mostrar-senha">
+						<i class="bi bi-circle" id="iconeMostrarSenha"></i>
+						<span id="txtMostrarSenha">Mostrar senha</span>
+					</div>
+				</div>
+				<button type="submit" class="btn-submit">
+					Enviar <i class="bi bi-box-arrow-in-right"></i>
+				</button>
+			</form>
+		</section>
+
+		<!-- Rodapé -->
+		<footer class="rodape">
+			<p class="creditos-autor">Desenvolvido por Vitor Souza</p>
+			<p class="creditos-img">
+				Logo e favicon criados por <a href="https://www.flaticon.com/br/icones-gratis/do-utilizador" title="Ícones de usuário" target="_blank" class="link-creditos-img">Those Icons - Flaticon</a>
+			</p>
+		</footer>
+	</div>
+
+	<!-- JavaScript -->
+	<script src="js/jquery-3.7.1.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>
